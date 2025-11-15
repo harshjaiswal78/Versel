@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Jaiswal - Resume</title>
+  <style>
+      body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+          line-height: 1.6;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 20px;
+          color: #262626;
+          background-color: #fafafa;
+      }
+      h1, h2, h3 {
+          color: #1a1a1a;
+      }
+      h1 {
+          text-align: center;
+          margin-bottom: 5px;
+          font-size: 28px;
+          font-weight: 600;
+      }
+      h2 {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #e0e0e0;
+          padding-bottom: 5px;
+      }
+      .subtitle {
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 14px;
+          color: #666;
+      }
+      .contact {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 12px;
+          color: #666;
+      }
+      .section {
+          margin-bottom: 15px;
+      }
+      .job {
+          margin-bottom: 12px;
+      }
+      .job-header {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 600;
+          margin-bottom: 3px;
+          font-size: 13px;
+      }
+      .job-title {
+          font-size: 12px;
+          margin-top: 0;
+          margin-bottom: 5px;
+          color: #333;
+      }
+      .job-company {
+          font-weight: 600;
+          color: #1a1a1a;
+      }
+      .job-date {
+          color: #666;
+          font-size: 12px;
+      }
+      ul {
+          margin-top: 3px;
+          margin-bottom: 3px;
+          padding-left: 20px;
+          font-size: 12px;
+      }
+      li {
+          margin-bottom: 4px;
+          line-height: 1.5;
+      }
+      strong {
+          font-weight: 600;
+          color: #1a1a1a;
+      }
+      .print-button {
+          text-align: center;
+          margin: 20px 0;
+      }
+      .print-button button {
+          padding: 10px 20px;
+          background-color: #262626;
+          color: white;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+      }
+      .print-button button:hover {
+          background-color: #1a1a1a;
+      }
+      @media print {
+          .print-button {
+              display: none;
+          }
+          body {
+              background-color: white;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div class="print-button">
+      <button onclick="window.print()">Print/Save as PDF</button>
+  </div>
+
+  <h1>Harsh Jaiswal</h1>
+  <p class="subtitle">Data Analyst</p>
+  <p class="contact">Paris, Ile-de-France | harshjaiswal97@gmail.com | (+33) 7 67 46 35 83 | <a href="https://www.linkedin.com/in/harshjaiswal97/" target="_blank">LinkedIn</a> | <a href="https://github.com/harshjaiswal78" target="_blank">GitHub</a></p>
+
+  <div class="section">
+      <h2>Summary</h2>
+      <p>Data Analyst with 3+ years of experience improving acquisition, retention, and customer lifecycle performance across product, growth, and sales teams. Skilled in SQL, Python, and BI tools with a strong track record in funnel analysis, churn reduction, KPI design, and automated data pipelines. Adept at translating business questions into analytical insights that drive revenue-impacting decisions and operational efficiency. Experienced in working cross-functionally with marketing, CRM, and leadership teams to deliver measurable performance improvements.</p>
+  </div>
+
+  <div class="section">
+      <h2>Skills</h2>
+      <ul>
+          <li><strong>Programming:</strong> SQL (PostgreSQL, MySQL, BigQuery), Python (Pandas, NumPy, SciPy, scikit-learn)</li>
+          <li><strong>Data Engineering:</strong> dbt, ETL pipelines, REST API integration, Data Warehousing (GCP, Azure)</li>
+          <li><strong>Analytics:</strong> A/B testing, hypothesis testing, funnel analysis, cohort analysis, churn analysis, forecasting, KPI framework design</li>
+          <li><strong>BI Tools:</strong> Tableau, Power BI (DAX), Looker Studio, Metabase, Excel (advanced)</li>
+          <li><strong>Workflow & Collaboration:</strong> Git, Jira, Confluence, Agile practices, Data Governance</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Experience</h2>
+      
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">Ayomi.fr – AI-powered fintech fundraising platform</span>
+              <span class="job-date">Paris, France</span>
+          </div>
+          <p class="job-title"><strong>Data Analyst</strong> | Jul 2025 – Present</p>
+          <ul>
+              <li>Engineered automated Looker pipelines integrating 10+ data sources, improving MQL–to–SQL conversion by 18% and freeing 12 analyst hours per week.</li>
+              <li>Partnered with the Growth team to design and analyse A/B testing on email campaigns, optimising subject lines and send timing to lift user activation by 3% and improve click–through rate accuracy by 5%.</li>
+              <li>Built a Python script to eliminate bot traffic in email analytics (user–agent/IP heuristics + rate-limit rules), restoring human–only metrics and enabling optimisations that lifted open rate +7% and landing–page conversions +7%.</li>
+              <li>Built an end-to-end ETL pipeline for the Account Management team, consolidating scattered data sources and Excel files, automating weekly refreshes with Airflow, and delivering a unified Power BI reporting layer.</li>
+          </ul>
+      </div>
+
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">Singulart – SaaS Global Online Art Marketplace</span>
+              <span class="job-date">Paris, France</span>
+          </div>
+          <p class="job-title"><strong>Data Analyst (Acquisition and Retention)</strong> | Sep 2024 – Mar 2025</p>
+          <ul>
+              <li>Built cohort–based acquisition dashboards to visualise LTV: CAC ratios, reducing marketing spend inefficiencies by 12% and improving ROI forecasting accuracy by 15%.</li>
+              <li>Analysed user funnel metrics across acquisition cohorts, identifying drop–off points that informed product roadmap priorities and reduced churn by 8%.</li>
+              <li>Partnered with executive leadership to reduce churn by building retention dashboards that drove quarterly revenue planning.</li>
+          </ul>
+      </div>
+
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">Sisyphus Training – Boutique fitness studio</span>
+              <span class="job-date">Paris, France</span>
+          </div>
+          <p class="job-title"><strong>Data Analyst and Marketing Consultant (In-Company Project)</strong> | Jan 2024 – May 2024</p>
+          <ul>
+              <li>Cleaned and analysed CRM datasets to uncover user behaviour patterns, increasing retention by 15% via targeted re-engagement flows.</li>
+              <li>Built real–time dashboards in Power BI (retention, conversion, pipeline), used in monthly board meetings to accelerate decision–making.</li>
+          </ul>
+      </div>
+
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">HCL Technologies – Global IT services and consulting firm</span>
+              <span class="job-date">Noida, India</span>
+          </div>
+          <p class="job-title"><strong>Data Analyst (Client: SC Johnson)</strong> | Nov 2020 – Feb 2023</p>
+          <ul>
+              <li>Automated multi-region performance dashboards tracking procurement and logistics KPIs, identifying inefficiencies that generated $0.5M+ annual savings and reduced SLA breaches by 18%.</li>
+              <li>Built real–time issue monitoring tools that reduced incident resolution time by 30%, enhancing response efficiency across regional teams.</li>
+              <li>Created forecasting models used by brand/category leads to shape market–entry strategies across 3 continents.</li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">Emlyon Business School</span>
+              <span class="job-date">Paris, France</span>
+          </div>
+          <p class="job-title"><strong>MSc in Digital Marketing & Data Science</strong> | Sep 2023 – Jun 2025</p>
+          <p style="font-size: 12px; margin: 3px 0;">Relevant Coursework: Web Analytics, Programmatic Advertising, Data Visualisation, Python, SQL, Market Analysis, MS Excel.</p>
+      </div>
+
+      <div class="job">
+          <div class="job-header">
+              <span class="job-company">Satyabhama Institute of Science and Technology</span>
+              <span class="job-date">Chennai, India</span>
+          </div>
+          <p class="job-title"><strong>Bachelor's, Computer Science & Engineering</strong> | May 2016 – Jul 2020</p>
+          <p style="font-size: 12px; margin: 3px 0;">Relevant Coursework: C, C++, Java, Cloud Computing, Python, SQL, HTML, CSS, JavaScript.</p>
+      </div>
+  </div>
+
+  <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+          <li>SQL Associate – Data Camp</li>
+          <li>Associate Data Analyst – Data Camp</li>
+          <li>Visual Analytics with Tableau – Coursera</li>
+          <li>dbt Fundamentals – dbt Labs</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Languages</h2>
+      <ul>
+          <li>English (Native/Bilingual)</li>
+          <li>Hindi (Native)</li>
+          <li>French (A2)</li>
+      </ul>
+  </div>
+
+  <div class="print-button">
+      <button onclick="window.print()">Print/Save as PDF</button>
+  </div>
+</body>
+</html>
