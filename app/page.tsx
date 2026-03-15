@@ -233,6 +233,17 @@ export default function Portfolio() {
       tags: ["Tableau", "Data Visualization", "Urban Analytics", "Dashboard Design"],
       link: "https://public.tableau.com/app/profile/harsh.jaiswal/viz/LondonBikeRides-MovingAverageandHeatmap_17378188375130/Dashboard",
     },
+    {
+      title: "OULAD Student Performance & Attrition Analytics",
+      description:
+        "Built an end-to-end analytics engineering pipeline using dbt and DuckDB to analyze Open University Learning Analytics Dataset (OULAD), featuring layered data models and a live Looker Studio dashboard.",
+      businessObjective:
+        "Enable educational institutions to identify at-risk students early and improve retention rates through data-driven intervention strategies.",
+      problemStatement:
+        "Universities struggle to identify students at risk of dropping out before it's too late. They needed a scalable analytics solution to transform raw learning data into actionable insights for student success.",
+      tags: ["dbt", "DuckDB", "Python", "Analytics Engineering", "Looker Studio", "Data Quality", "ETL"],
+      link: "https://github.com/harshjaiswal78/oulad-analytics-engineering-dbt-duckdb",
+    },
   ]
 
   if (!mounted) {
