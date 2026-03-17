@@ -157,6 +157,18 @@ export default function Portfolio() {
   // Expanded projects data with business objectives and problem statements
   const projects = [
     {
+      title: "OULAD Analytics Engineering",
+      description:
+        "Production-grade data engineering pipeline analyzing Open University Learning Analytics Dataset using dbt for transformations, DuckDB for analytics, and Looker Studio for visualization.",
+      businessObjective:
+        "Enable data-driven decision making in education by building a comprehensive analytics platform to understand student performance, engagement, and attrition patterns.",
+      problemStatement:
+        "Educational institutions lack a scalable, modern data infrastructure to analyze student learning patterns and identify at-risk students before they disengage or fail courses.",
+      tags: ["dbt", "DuckDB", "Python", "Looker Studio", "SQL", "Data Engineering", "Analytics"],
+      link: "/oulad",
+      featured: true,
+    },
+    {
       title: "AWS YouTube Data Engineering",
       description:
         "Built an end-to-end data engineering pipeline on AWS to ingest, process, and analyze YouTube trending videos data at scale using S3, Glue, Lambda, and Athena.",

@@ -14,6 +14,7 @@ interface PremiumProjectCardProps {
   problemStatement: string
   tags: string[]
   link?: string
+  featured?: boolean
 }
 
 export default function PremiumProjectCard({
@@ -23,6 +24,7 @@ export default function PremiumProjectCard({
   problemStatement,
   tags,
   link,
+  featured,
 }: PremiumProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
@@ -67,6 +69,15 @@ export default function PremiumProjectCard({
           >
             <Cloud size={24} />
           </motion.div>
+        )}
+
+        {/* Featured badge for highlighted projects */}
+        {featured && (
+          <div className="absolute top-3 right-3">
+            <span className="px-2 py-1 text-xs font-medium bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-full">
+              Featured
+            </span>
+          </div>
         )}
 
         <CardHeader>
@@ -128,17 +139,29 @@ export default function PremiumProjectCard({
             ))}
           </div>
           {link && (
-            <motion.a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm text-[#F2653C] hover:text-[#d85835] font-medium transition-colors group/link"
-              whileHover={{ x: 5 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <span>View Project</span>
-              <ArrowRight size={14} className="transition-transform duration-300 group-hover/link:translate-x-1" />
-            </motion.a>
+            link.startsWith('/') ? (
+              <motion.a
+                href={link}
+                className="flex items-center gap-1.5 text-sm text-emerald-600 hover:text-emerald-500 font-medium transition-colors group/link"
+                whileHover={{ x: 5 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <span>View Project Details</span>
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover/link:translate-x-1" />
+              </motion.a>
+            ) : (
+              <motion.a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-[#F2653C] hover:text-[#d85835] font-medium transition-colors group/link"
+                whileHover={{ x: 5 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <span>View Project</span>
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover/link:translate-x-1" />
+              </motion.a>
+            )
           )}
         </CardFooter>
       </Card>
